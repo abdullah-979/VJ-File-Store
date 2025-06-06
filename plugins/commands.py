@@ -229,7 +229,7 @@ async def start(client, message):
         msg = await client.get_messages(LOG_CHANNEL, int(decode_file_id))
         if msg.media:
             media = getattr(msg, msg.media.value)
-            title = (f_caption)
+            title = (caption)
             size=get_size(media.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
